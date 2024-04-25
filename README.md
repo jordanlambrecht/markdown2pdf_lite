@@ -1,8 +1,8 @@
-# MDX-to-PDF Converter
+# MDX-to-PDF Converter (Lite)
 
 ## Description
 
-This Python script automatically converts files from MDX format to PDF. It's designed to be run from the command line and provides a simple, interactive user experience. Perfect for archiving or sharing your MDX documents in a more accessible format!
+This Python script automatically converts files from MDX format to PDF. It's designed to be run from the command line and provides a simple, interactive user experience. Perfect for archiving or sharing your MDX documents in a more accessible format or uploading documentation to ChatGPT.
 
 ## Features
 
@@ -15,35 +15,37 @@ This Python script automatically converts files from MDX format to PDF. It's des
 
 Before running the script, make sure you have Python 3 installed on your Mac. This script uses `fpdf` to generate PDFs, so you will need to install this library.
 
-1; Clone the repository
+1. Clone the repository
 
-```bash
-#!/bin/bash
-git clone <repository-url>
-cd path-to-repository
-```
+   ```bash
+   git clone git@github.com:jordanlambrecht/markdown2pdf_lite.git
+   cd markdown2pdf_lite
+   ```
 
-2; Set up a virtual environment (optional but recommended)
+2. Set up a virtual environment (optional but recommended)
 
-```bash
-#!/bin/bash
-python3 -m venv venv
-source venv/bin/activate
-```
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
 
-3; Install Dependencies
+3. Install Dependencies
 
-`pip install -r requirements.txt`
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
-1; Set the input directory: Open the script in a text editor and modify the input_dir variable to point to the directory containing your .mdx files.
+1. Set the input directory: Open the script in a text editor and modify the input_dir variable to point to the directory containing your .mdx files.
 
-2; Run the script:
+2.Run the script:
 
-`python3 mdx_to_pdf_converter.py`
+     ```bash
+     python3 mdx_to_pdf_converter.py
+     ```
 
-3; Follow the on-screen prompts to enter the project name and other options.
+3.Follow the on-screen prompts to enter the project name and other options.
 
 ## Output
 
@@ -58,8 +60,4 @@ IDK wtf I'm doing, so any help is great! Feel free to fork this project, make im
 - Add support for more complex MDX elements.
 - Improve error handling and user feedback.
 - Enhance the PDF formatting options.
-
-## Additional Information
-
-- Make sure to replace `<repository-url>` with the actual URL of your GitHub repository where the script is hosted.
-- It assumes that you are familiar with the basic Git operations necessary to clone and contribute to repositories.
+- Figure out how to switch to markdown2 for pygments and code highlighting

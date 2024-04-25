@@ -1,1 +1,6 @@
-fpdf
+fpdf2
+markdown
+weasyprint
+Pygments
+python-frontmatter
+markdown2
