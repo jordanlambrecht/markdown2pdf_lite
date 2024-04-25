@@ -1,0 +1,6 @@
+venv
+.env
+output
+.DS_STORE
+logs/
+input/
